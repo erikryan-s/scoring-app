@@ -5,8 +5,8 @@ let playerTwoScore = 0;
 const root = document.querySelector("#app");
 const view = new ScoreboardView(
     root,
-    "Player One",
-    "Player Two",
+    "Team One",
+    "Team Two",
     (player, direction) => {
         const difference = direction === "minus" ? -1 : 1;
 
