@@ -7,7 +7,6 @@
 ## Table of Contents
 
 -   [Screenshots](#screenshots)
--   [Start-up Instructions](#start-up-instructions)
 
 ## Screenshots
 
