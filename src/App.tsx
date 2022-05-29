@@ -1,11 +1,18 @@
 import "./App.scss";
-import Counter from "./components/Counter";
+import Counter from "./components/Counter/Counter";
 
 const App = () => {
     return (
-        <div id="main">
-            <Counter title={"Team 1"} initialCount={0} />
-            <Counter title={"Team 2"} initialCount={0} />
+        <div className="app">
+            <h1>Scoreboard</h1>
+            <div className="scoreboard">
+                <div className="teamOne">
+                    <Counter title="Home" initialCount={0} />
+                </div>
+                <div className="teamTwo">
+                    <Counter title="Guest" initialCount={0} />
+                </div>
+            </div>
         </div>
     );
 };
