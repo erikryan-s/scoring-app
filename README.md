@@ -1,15 +1,15 @@
-# scoring-app
+# Getting Started with Create React App
 
-//
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-🔗 [Live Demo](https://erikryan-s.github.io/scoring-app/)
+## Available Scripts
 
-## Table of Contents
+In the project directory, you can run:
 
--   [Screenshots](#screenshots)
+### `npm start`
 
-## Screenshots
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<p align="center">
-    <img src="https://i.gyazo.com/a6143828a845a86cacf76fa7200c304d.png" height="400" width=auto>
-</p>
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
