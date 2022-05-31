@@ -42,7 +42,7 @@ const Counter: FC<IProps> = ({ title, initialCount }) => {
     return (
         <ThemeProvider theme={theme}>
             <StyledCounter>
-                <TeamName isTeamOne={props.isTeamOne}>{title}</TeamName>
+                <TeamName isTeamOne={true}>{title}</TeamName>
                 <ScoreCount isTeamOne={true}>{count}</ScoreCount>
                 <ScoreButtons>
                     <Button isTeamOne={true} onClick={() => increase()}>
