@@ -7,7 +7,7 @@ A simple hobby project that I've created to hone my TypeScript skills.
 ## Screenshots
 
 <p align="center">
-    <img src="" height="400" width=auto>
+    <img src="https://i.gyazo.com/4957ca26299b0f948685ce92424a978c.png" height="400" width=auto>
 </p>
 
 ## Run App
