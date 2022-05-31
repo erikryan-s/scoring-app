@@ -27,3 +27,4 @@ You will also see any lint errors in the console.
 -   To create a functional and easy to use scoring app that is able to keep score between 2 teams.
 -   The app was built with Volleyball scoring in mind (score goes from 0-25).
 -   Practice TypeScript fundamentals.
+-   Practice Styled Components skills.

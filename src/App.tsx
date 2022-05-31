@@ -4,7 +4,9 @@ import Counter from "./components/Counter";
 const App = () => {
     return (
         <div className="app">
-            <h1>🏐Scoreboard🏐</h1>
+            <h1>
+                <span>🏐</span>Scoreboard<span>🏐</span>
+            </h1>
             <div className="scoreboard">
                 <div className="teamOne">
                     <Counter title="Home" initialCount={0} isTeamOne={true} />

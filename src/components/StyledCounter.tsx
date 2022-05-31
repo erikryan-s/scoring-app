@@ -36,8 +36,12 @@ export const ScoreCount = styled.h3<CounterProps>`
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+        font-size: 5rem;
+    }
 `;
 
 export const ScoreButtons = styled.div``;
@@ -54,7 +58,7 @@ export const Button = styled.button<CounterProps>`
                 : props.theme.colors.teamTwoBorder};
     border-radius: 5px;
     color: ${(props) => props.theme.colors.white};
-    padding: 0px 30px;
+    padding: 0px 20px;
     margin: 5px;
     text-align: center;
     text-decoration: none;
