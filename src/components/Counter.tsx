@@ -9,15 +9,14 @@ import {
     Button,
     Reset,
     ResetButton,
-} from "./StyledCounter";
+} from "./styles/StyledCounter";
 
 interface IProps {
-    title: string;
     initialCount: number;
     isTeamOne: boolean;
 }
 
-const Counter: FC<IProps> = ({ title, initialCount, isTeamOne }) => {
+const Counter: FC<IProps> = ({ initialCount, isTeamOne }) => {
     const [count, setCount] = useState(initialCount);
 
     const increase = () => {
@@ -42,7 +41,7 @@ const Counter: FC<IProps> = ({ title, initialCount, isTeamOne }) => {
     return (
         <ThemeProvider theme={theme}>
             <StyledCounter>
-                <TeamName isTeamOne={isTeamOne}>{title}</TeamName>
+                <TeamName isTeamOne={isTeamOne} defaultValue="Team"></TeamName>
                 <ScoreCount isTeamOne={isTeamOne}>{count}</ScoreCount>
                 <ScoreButtons>
                     <Button isTeamOne={isTeamOne} onClick={() => increase()}>

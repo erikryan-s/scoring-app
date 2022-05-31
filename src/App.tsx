@@ -9,10 +9,10 @@ const App = () => {
             </h1>
             <div className="scoreboard">
                 <div className="teamOne">
-                    <Counter title="Home" initialCount={0} isTeamOne={true} />
+                    <Counter initialCount={0} isTeamOne={true} />
                 </div>
                 <div className="teamTwo">
-                    <Counter title="Guest" initialCount={0} isTeamOne={false} />
+                    <Counter initialCount={0} isTeamOne={false} />
                 </div>
             </div>
         </div>

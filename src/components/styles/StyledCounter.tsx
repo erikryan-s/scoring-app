@@ -11,13 +11,21 @@ export const StyledCounter = styled.div`
     align-items: center;
 `;
 
-export const TeamName = styled.h2<CounterProps>`
+export const TeamName = styled.textarea<CounterProps>`
     color: ${(props) =>
         props.isTeamOne
             ? props.theme.colors.teamOne
             : props.theme.colors.teamTwo};
-    font-size: 2.5rem;
+    background-color: ${(props) => props.theme.colors.background};
+    border: none;
+    font-size: 3rem;
     font-weight: 500;
+    text-align: center;
+    max-height: 100px;
+    width: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
 `;
 
 export const ScoreCount = styled.h3<CounterProps>`
