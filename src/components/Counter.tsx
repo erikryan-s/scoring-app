@@ -17,7 +17,7 @@ interface IProps {
     isTeamOne: boolean;
 }
 
-const Counter: FC<IProps> = ({ title, initialCount }) => {
+const Counter: FC<IProps> = ({ title, initialCount, isTeamOne }) => {
     const [count, setCount] = useState(initialCount);
 
     const increase = () => {
@@ -42,13 +42,13 @@ const Counter: FC<IProps> = ({ title, initialCount }) => {
     return (
         <ThemeProvider theme={theme}>
             <StyledCounter>
-                <TeamName isTeamOne={true}>{title}</TeamName>
-                <ScoreCount isTeamOne={true}>{count}</ScoreCount>
+                <TeamName isTeamOne={isTeamOne}>{title}</TeamName>
+                <ScoreCount isTeamOne={isTeamOne}>{count}</ScoreCount>
                 <ScoreButtons>
-                    <Button isTeamOne={true} onClick={() => increase()}>
+                    <Button isTeamOne={isTeamOne} onClick={() => increase()}>
                         +
                     </Button>
-                    <Button isTeamOne={true} onClick={() => decrease()}>
+                    <Button isTeamOne={isTeamOne} onClick={() => decrease()}>
                         -
                     </Button>
                 </ScoreButtons>
